@@ -1,0 +1,35 @@
+import random 
+def get_choices():
+  player_choise = input("What do you choose? Rock, paper or scissors?" )
+  options = ["rock", "paper", "scissors"]
+  computer_choice = random.choice(options)
+  choices = {"player": player, "computer": computer}
+  return choices
+
+def check_win(player, computer)
+  print (f"You chose {player}, the computer chose {computer}")
+  if player == computer:
+    return "It's a tie!"
+  elif player == "rock":
+    if computer == "scissors":
+      return "Rock smashes scissors! You won!"
+    else:
+      return  "Paper covers rock! You lost."
+
+  elif player == "paper":
+    if computer == "rock":
+      return "Paper covers rock! You won!"
+    else:
+      return "Scissors cuts paper! You lost."
+
+  elif player == "scissors":
+    if computer == "paper":
+      return "Scissors cuts paper! You won!"
+    else:
+      return "Rock smashes scissors! You lost."
+
+choices = get_choices()
+result check_win(choices["player"], choices["computer"])
+print result
+
+  
